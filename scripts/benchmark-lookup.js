@@ -34,3 +34,5 @@ const slow = time('Array.find', (ref) => bookings.find((b) => b.reference === re
 const fast = time('Map.get', (ref) => byReference.get(ref));
 console.log(`\nMap was about ${Math.round(slow / fast).toLocaleString()}x faster.`);
 console.log('Array.find is O(n): it may scan every booking. Map.get is O(1): the work does not grow with n.');
+
+

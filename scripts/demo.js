@@ -53,3 +53,5 @@ try {
 step('Who is next in line?');
 const next = nextInWaitlist(store, tier.id);
 say(`Next in line: ${next.attendeeName}, who wants ${next.quantity} seat(s). ${seatsLeft(tier)} are free.`);
+
+
